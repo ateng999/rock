@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock Raper Scissors</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="btn_block">
+				<button class="btn" data-selection="rock">
+					<img src="img/user_rock.png" alt="">
+				</button>
+				<button class="btn" data-selection="paper">
+					<img src="img/user_paper.png" alt="">
+				</button>
+				<button class="btn" data-selection="scissor">
+					<img src="img/user_scissor.png" alt="">
+				</button>
+			</div>
+
+			<div id="result"></div>
+			<div class="results_block">
+				<div class="results">
+					<p>Computer</p>
+					<div class="result_score" id="computerScore">0</div>
+				</div>
+				<div class="results">
+					<p>You</p>
+					<div class="result_score" id="userScore">0</div>
+				</div>
+				<div id="computer" class="results_selection"><img src="img/comp_paper.png" alt=""></div>
+				<div id="user" class="results_selection"><img src="img/user_paper.png" alt=""></div>
+			</div>
+			<div id="history" class="history"></div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
